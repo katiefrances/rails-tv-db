@@ -1,0 +1,32 @@
+<div class="container">
+<p id="notice"><%= notice %></p>
+
+<h1>TV Shows</h1>
+
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Episodes</th>
+      <th scope="col">Up to date</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tv_dbs.each do |tv_db| %>
+      <tr>
+        
+        <td scope="row"><%= link_to tv_db.name , tv_db %></td>
+        <td scope="row"><%= tv_db.desc %></td>
+        <td scope="row"><%= tv_db.number_of_episodes %></td>
+        <td scope="row"><%= tv_db.up_to_date %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Add new', new_tv_db_path %>
+</div> 

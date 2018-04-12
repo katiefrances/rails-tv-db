@@ -1,0 +1,29 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Name:</strong><br>
+    <%= @tv_db.name %>
+  </p>
+
+  <p>
+    <strong>Description:</strong><br>
+    <%= @tv_db.desc %>
+  </p>
+
+  <p>
+    <strong>Number of episodes:</strong><br>
+    <%= @tv_db.number_of_episodes %>
+  </p>
+
+  <p>
+    <strong>Up to date:</strong><br>
+    <%= @tv_db.up_to_date %>
+  </p>
+
+
+  <%= link_to 'Edit', edit_tv_db_path(@tv_db) %> |
+  <%= link_to 'Delete', @tv_db, method: :delete, data: { confirm: 'Are you sure?' } %> |
+  <%= link_to 'Back', tv_dbs_path %>
+
+</div>

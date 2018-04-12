@@ -1,0 +1,2 @@
+class TvDb < ApplicationRecord
+end

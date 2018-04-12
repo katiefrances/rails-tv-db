@@ -1,0 +1,40 @@
+
+<%= form_with(model: tv_db, local: true) do |form| %>
+<div class="form-group">
+  <% if tv_db.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tv_db.errors.count, "error") %> prohibited this tv_db from being saved:</h2>
+
+      <ul>
+      <% tv_db.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :desc %>
+    <%= form.text_field :desc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :number_of_episodes %>
+    <%= form.number_field :number_of_episodes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :up_to_date %>
+    <%= form.text_field :up_to_date %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+  </div>
+<% end %>

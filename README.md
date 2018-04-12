@@ -4,5 +4,5 @@ This is a reproduction of an app that I made along time ago in PHP/SQL that is r
 
 I've been fiddling wih routes and views to change things around a bit, and it's a good starting point for a good project.
 
-* Rails 5.20
+* Rails 5.2
 * Bootstrap 4

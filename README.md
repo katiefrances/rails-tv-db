@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a reproduction of an app that I made along time ago in PHP/SQL that is really basic and just takes some basic information from the user and keeps track of it.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+I've been fiddling wih routes and views to change things around a bit, and it's a good starting point for a good project.
